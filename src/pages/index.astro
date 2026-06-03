@@ -1,8 +1,10 @@
 ---
+import { Image } from 'astro:assets';
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import avatar from '../assets/avatar.jpg';
 ---
 
 <!doctype html>
@@ -14,17 +16,22 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 		<Header />
 		<main>
 			<section class="hero">
-				<h1>DevOps notes<br />from the trenches.</h1>
-				<p class="lead">
-					Hi, I'm Filip — a DevOps engineer based in Croatia. CKA certified.
-					Co-founder of <a href="https://gedor.ai" target="_blank">gedor.ai</a> and
-					founder of <a href="https://progrex.dev" target="_blank">Progrex</a>.
-				</p>
-				<p>
-					I write about Kubernetes, CI/CD pipelines, container security, infrastructure-as-code,
-					and the things that quietly break in production. Practical, reproducible, no fluff.
-				</p>
-				<a href="/blog" class="cta">Read the blog &rarr;</a>
+				<div class="hero-text">
+					<h1>DevOps notes<br />from the trenches.</h1>
+					<p class="lead">
+						Hi, I'm Filip — a DevOps engineer based in Croatia. CKA certified.
+						Co-founder of <a href="https://gedor.ai" target="_blank">gedor.ai</a> and
+						founder of <a href="https://progrex.dev" target="_blank">Progrex</a>.
+					</p>
+					<p>
+						I write about Kubernetes, CI/CD pipelines, container security, infrastructure-as-code,
+						and the things that quietly break in production. Practical, reproducible, no fluff.
+					</p>
+					<a href="/blog" class="cta">Read the blog &rarr;</a>
+				</div>
+				<div class="hero-avatar">
+					<Image src={avatar} alt="Filip Corluka" width={200} height={200} />
+				</div>
 			</section>
 			<section class="topics">
 				<h2>Topics</h2>
@@ -46,6 +53,21 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 		max-width: 720px;
 		margin: 0 auto;
 		padding: 3em 1em;
+	}
+	.hero {
+		display: flex;
+		align-items: flex-start;
+		gap: 2.5em;
+	}
+	.hero-text {
+		flex: 1;
+	}
+	.hero-avatar img {
+		width: 160px;
+		height: 160px;
+		border-radius: 50%;
+		object-fit: cover;
+		box-shadow: var(--box-shadow);
 	}
 	.hero h1 {
 		font-size: 3em;
@@ -97,5 +119,16 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 		border-radius: 999px;
 		font-size: 0.85em;
 		color: rgb(var(--gray-dark));
+	}
+	@media (max-width: 720px) {
+		.hero {
+			flex-direction: column-reverse;
+			align-items: center;
+			text-align: center;
+		}
+		.hero-avatar img {
+			width: 120px;
+			height: 120px;
+		}
 	}
 </style>
