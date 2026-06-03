@@ -123,9 +123,9 @@ The problem was never permanence. It's *unaccountable* permanence: no reason, no
 
 So: `expired_at` for risks you're accepting *temporarily* (waiting on an upstream fix, a planned upgrade). A `statement` with no expiry for risks you've accepted *permanently* and on purpose. Both are honest. The naked CVE ID is the only dishonest option.
 
-## Push it left, into the PR
+## Move the action results into your PR
 
-Local scans are for you. The real leverage is moving this into the pull request, where the whole team sees it.
+The real leverage is moving this into the pull request, where the whole team sees it.
 
 Wire the same scan into your CI and have it post the results as a PR comment. Now your suppressions aren't a file someone *might* read — they're sitting in the review, next to the diff:
 
