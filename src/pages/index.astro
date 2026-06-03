@@ -1,4 +1,4 @@
-a---
+---
 import { Image } from 'astro:assets';
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
@@ -130,9 +130,15 @@ import avatar from '../assets/avatar.jpg';
 			align-items: center;
 			text-align: center;
 		}
+		.hero-avatar {
+			padding-top: 0;
+		}
 		.hero-avatar img {
 			width: 120px;
 			height: 120px;
+		}
+		.hero h1 {
+			font-size: 2em;
 		}
 	}
 </style>
