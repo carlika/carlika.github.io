@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1020" height="510" viewBox="0 0 1020 510">
+  <!-- Background -->
+  <rect width="1020" height="510" fill="#0f1219"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1020" height="4" fill="#2337ff"/>
+
+  <!-- Left code panel: bare .trivyignore -->
+  <rect x="60" y="60" width="390" height="290" rx="8" fill="#161b27"/>
+  <!-- Panel titlebar -->
+  <rect x="60" y="60" width="390" height="38" rx="8" fill="#1e2538"/>
+  <rect x="60" y="84" width="390" height="14" fill="#1e2538"/>
+  <!-- Dot buttons -->
+  <circle cx="84" cy="79" r="6" fill="#ff5f57"/>
+  <circle cx="104" cy="79" r="6" fill="#febc2e"/>
+  <circle cx="124" cy="79" r="6" fill="#28c840"/>
+  <!-- Filename -->
+  <text x="145" y="84" font-family="monospace, 'Courier New'" font-size="13" fill="#6b7280">.trivyignore</text>
+  <!-- CVE lines — intentionally bare and red-ish -->
+  <text x="88" y="130" font-family="monospace, 'Courier New'" font-size="15" fill="#f87171">CVE-2018-18074</text>
+  <text x="88" y="158" font-family="monospace, 'Courier New'" font-size="15" fill="#f87171">CVE-2019-10906</text>
+  <text x="88" y="186" font-family="monospace, 'Courier New'" font-size="15" fill="#f87171">CVE-2020-1747</text>
+  <text x="88" y="214" font-family="monospace, 'Courier New'" font-size="15" fill="#f87171">CVE-2021-33503</text>
+  <text x="88" y="242" font-family="monospace, 'Courier New'" font-size="15" fill="#374151">CVE-2022-40897</text>
+  <text x="88" y="270" font-family="monospace, 'Courier New'" font-size="15" fill="#374151">CVE-2023-18725</text>
+  <!-- Badge -->
+  <rect x="88" y="298" width="136" height="26" rx="4" fill="#2d1515"/>
+  <text x="100" y="315" font-family="monospace, 'Courier New'" font-size="12" fill="#f87171">no reason · no expiry</text>
+
+  <!-- Arrow -->
+  <line x1="464" y1="205" x2="546" y2="205" stroke="#2337ff" stroke-width="2.5" stroke-dasharray="6,3"/>
+  <polygon points="546,199 558,205 546,211" fill="#2337ff"/>
+
+  <!-- Right code panel: .trivyignore.yaml -->
+  <rect x="570" y="60" width="390" height="290" rx="8" fill="#161b27"/>
+  <rect x="570" y="60" width="390" height="38" rx="8" fill="#1e2538"/>
+  <rect x="570" y="84" width="390" height="14" fill="#1e2538"/>
+  <circle cx="594" cy="79" r="6" fill="#ff5f57"/>
+  <circle cx="614" cy="79" r="6" fill="#febc2e"/>
+  <circle cx="634" cy="79" r="6" fill="#28c840"/>
+  <text x="655" y="84" font-family="monospace, 'Courier New'" font-size="13" fill="#6b7280">.trivyignore.yaml</text>
+  <!-- YAML content -->
+  <text x="598" y="125" font-family="monospace, 'Courier New'" font-size="13" fill="#818cf8">vulnerabilities:</text>
+  <text x="598" y="148" font-family="monospace, 'Courier New'" font-size="13" fill="#94a3b8">  - <tspan fill="#60a5fa">id</tspan><tspan fill="#94a3b8">: </tspan><tspan fill="#86efac">CVE-2018-18074</tspan></text>
+  <text x="598" y="168" font-family="monospace, 'Courier New'" font-size="13" fill="#94a3b8">    <tspan fill="#60a5fa">statement</tspan><tspan fill="#94a3b8">: </tspan><tspan fill="#fca5a5">"never follow redirects"</tspan></text>
+  <text x="598" y="188" font-family="monospace, 'Courier New'" font-size="13" fill="#94a3b8">    <tspan fill="#60a5fa">expired_at</tspan><tspan fill="#94a3b8">: </tspan><tspan fill="#fb923c">2026-09-01</tspan></text>
+  <text x="598" y="215" font-family="monospace, 'Courier New'" font-size="13" fill="#94a3b8">  - <tspan fill="#60a5fa">id</tspan><tspan fill="#94a3b8">: </tspan><tspan fill="#86efac">CVE-2019-10906</tspan></text>
+  <text x="598" y="235" font-family="monospace, 'Courier New'" font-size="13" fill="#94a3b8">    <tspan fill="#60a5fa">statement</tspan><tspan fill="#94a3b8">: </tspan><tspan fill="#fca5a5">"no untrusted templates"</tspan></text>
+  <text x="598" y="255" font-family="monospace, 'Courier New'" font-size="13" fill="#94a3b8">    <tspan fill="#60a5fa">expired_at</tspan><tspan fill="#94a3b8">: </tspan><tspan fill="#fb923c">2026-07-15</tspan></text>
+  <!-- Badge -->
+  <rect x="598" y="298" width="152" height="26" rx="4" fill="#0f2d1a"/>
+  <text x="610" y="315" font-family="monospace, 'Courier New'" font-size="12" fill="#4ade80">reason · owner · expiry</text>
+
+  <!-- Divider above title -->
+  <line x1="60" y1="385" x2="960" y2="385" stroke="#1e2538" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="510" y="430" font-family="monospace, 'Courier New'" font-size="26" font-weight="bold" fill="#f1f5f9" text-anchor="middle">Your .trivyignore Is a Junk Drawer</text>
+  <text x="510" y="464" font-family="monospace, 'Courier New'" font-size="14" fill="#374151" text-anchor="middle">carlika.github.io</text>
+</svg>

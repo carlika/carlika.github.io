@@ -2,6 +2,7 @@
 title: "Your .trivyignore Is a Junk Drawer"
 description: "Suppressing CVEs is fine. Suppressing them without a reason, an owner, or an expiry date is just amnesia. Here's how to treat Trivy suppressions like code."
 pubDate: "Jun 03 2026"
+heroImage: "../../assets/trivy-cover.svg"
 tags: ["devops", "security", "trivy", "ci-cd", "supply-chain"]
 ---
 
