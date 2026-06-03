@@ -6,11 +6,11 @@ heroImage: "../../assets/trivy-cover.svg"
 tags: ["devops", "security", "trivy", "ci-cd", "supply-chain"]
 ---
 
-Your container scanner finds 13 CVEs. You suppress 2 of them. A year later, someone opens the file and finds two bare CVE IDs with no explanation.
+Your container scanner finds 13 CVEs. You suppress 2 of them. Months later, someone opens the file and finds two bare CVE IDs with no explanation.
 
 Be honest — would you remember why?
 
-This is the most common failure mode I see in pipeline security, and it has nothing to do with the scanner. Trivy, Grype, whatever you run — they all find the vulnerabilities just fine. The problem is what teams do with the findings they decide *not* to fix. Those decisions quietly rot, and by audit season nobody can defend a single one of them.
+This is the most common failure mode I see in pipeline security, and it has nothing to do with the scanner. [Trivy](https://trivy.dev/), Grype, whatever you run — they all find the vulnerabilities just fine. The problem is what teams do with the findings they decide *not* to fix. Those decisions quietly rot, and by audit season nobody can defend a single one of them.
 
 Here's how to stop that, using Trivy as the example. You can reproduce every step below locally in about five minutes.
 
