@@ -24,7 +24,7 @@
   <text x="88" y="242" font-family="monospace, 'Courier New'" font-size="15" fill="#374151">CVE-2022-40897</text>
   <text x="88" y="270" font-family="monospace, 'Courier New'" font-size="15" fill="#374151">CVE-2023-18725</text>
   <!-- Badge -->
-  <rect x="88" y="298" width="136" height="26" rx="4" fill="#2d1515"/>
+  <rect x="88" y="298" width="180" height="26" rx="4" fill="#2d1515"/>
   <text x="100" y="315" font-family="monospace, 'Courier New'" font-size="12" fill="#f87171">no reason · no expiry</text>
 
   <!-- Arrow -->
@@ -48,7 +48,7 @@
   <text x="598" y="235" font-family="monospace, 'Courier New'" font-size="13" fill="#94a3b8">    <tspan fill="#60a5fa">statement</tspan><tspan fill="#94a3b8">: </tspan><tspan fill="#fca5a5">"no untrusted templates"</tspan></text>
   <text x="598" y="255" font-family="monospace, 'Courier New'" font-size="13" fill="#94a3b8">    <tspan fill="#60a5fa">expired_at</tspan><tspan fill="#94a3b8">: </tspan><tspan fill="#fb923c">2026-07-15</tspan></text>
   <!-- Badge -->
-  <rect x="598" y="298" width="152" height="26" rx="4" fill="#0f2d1a"/>
+  <rect x="598" y="298" width="196" height="26" rx="4" fill="#0f2d1a"/>
   <text x="610" y="315" font-family="monospace, 'Courier New'" font-size="12" fill="#4ade80">reason · owner · expiry</text>
 
   <!-- Divider above title -->
