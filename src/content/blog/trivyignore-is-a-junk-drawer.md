@@ -10,7 +10,7 @@ Your container scanner finds 13 CVEs. You suppress 2 of them. Months later, some
 
 Would you remember why? I certainly won't.
 
-This is one of the biggest issues I had working in a company that had security certifications like SOC2 or ISO27001. Security pipelines are probably the worst nightmare for developers but it has nothing to do with the tool. Trivy, Grype, whatever you use, they all find the vulnerabilities just fine. The problem is what teams do with the findings they decide not to fix. Those decisions can go under the radar, usually done in a meeting where there is no audit trail for what drove that.
+This is one of the biggest issues I had working in companies that had security certifications like SOC2 or ISO27001. Security pipelines are probably the worst nightmare for developers but it has nothing to do with the tool. Trivy, Grype, whatever you use, they all find the vulnerabilities just fine. The problem is what teams do with the findings they decide not to fix. Those decisions can go under the radar, usually done in a meeting where there is no audit trail for what drove that.
 
 Here's how to address that, using [Trivy](https://trivy.dev/) as the tool of choice. I will do a practical example that you can run locally too.
 
@@ -61,7 +61,7 @@ CVE-2019-10906
 CVE-2018-18074
 ```
 
-"But I'll add comments!" — although this is better than just a plain list of CVEs, Trivy can't "understand" them. The `#` lines are valid syntax, but they never reach the scan report and nothing prevents them from going stale. And going stale is why I'm writing this article in the first place. Here's what Trivy actually shows for that file:
+"But I'll add comments!" - although this is better than just a plain list of CVEs, Trivy can't "understand" them. The `#` lines are valid syntax, but they never reach the scan report and nothing prevents them from going stale. And going stale is why I'm writing this article in the first place. Here's what Trivy actually shows for that file:
 
 ```bash
 trivy image --severity HIGH,CRITICAL --show-suppressed vuln-demo:latest
@@ -107,8 +107,6 @@ Commit that YAML file to the repo and three things change:
 - **Every suppression goes through a PR.** Adding a CVE to the ignore list becomes a reviewed decision.
 - **`git blame` tells you who ignored what, and when.** Accountability without extra tooling.
 - **`expired_at` limits how long the ignore stays active.** Maybe you are not sure if this is the issue, or there is no available fix for it at the moment. Once the date passes, the CVE returns to your scan results and you review it again with fresh context.
-
-You can verify the expiry behavior directly. Set a date in the past and re-scan.
 
 ## Permanent suppression is sometimes correct
 
