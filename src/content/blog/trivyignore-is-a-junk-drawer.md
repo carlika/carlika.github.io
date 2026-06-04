@@ -10,9 +10,9 @@ Your container scanner finds 13 CVEs. You suppress 2 of them. Months later, some
 
 Would you remember why?
 
-This is the most common failure mode I see in pipeline security, and it has nothing to do with the scanner. [Trivy](https://trivy.dev/), Grype, whatever you use, they all find the vulnerabilities just fine. The problem is what teams do with the findings they decide *not* to fix. Those decisions quietly rot, and by audit season nobody can defend a single one of them.
+This is the most common failure mode I see in pipeline security, and it has nothing to do with the scanner. Trivy, Grype, whatever you use, they all find the vulnerabilities just fine. The problem is what teams do with the findings they decide *not* to fix. Those decisions quietly rot, and by audit season nobody can defend a single one of them.
 
-Here's how to address that, using Trivy as the example. Every step below can be reproduced locally in about five minutes.
+Here's how to address that, using [Trivy](https://trivy.dev/) as the example. Every step below can be reproduced locally in about five minutes.
 
 ## A deliberately vulnerable image
 
